@@ -6,11 +6,11 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.4.3</version>
+    <version>2.4.2</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.github.jms-smoothstack-utopia</groupId>
-  <artifactId>ss-utopia-config</artifactId>
+  <artifactId>ss-utopia-config-server</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Utopia Configuration Server</name>
   <description>Configuration server for Utopia Spring services</description>
@@ -18,11 +18,13 @@
     <java.version>11</java.version>
     <spring-cloud.version>2020.0.1</spring-cloud.version>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-config-server</artifactId>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -33,17 +35,20 @@
       <artifactId>spring-boot-configuration-processor</artifactId>
       <optional>true</optional>
     </dependency>
+
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
