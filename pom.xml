@@ -11,7 +11,7 @@
   </parent>
   <groupId>com.github.jms-smoothstack-utopia</groupId>
   <artifactId>ss-utopia-config-server</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <name>Utopia Configuration Server</name>
   <description>Configuration server for Utopia Spring services</description>
   <properties>
