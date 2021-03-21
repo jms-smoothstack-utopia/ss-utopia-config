@@ -95,6 +95,7 @@
                 </assembly>
                 <dockerFile>Dockerfile</dockerFile>
                 <tags>
+                  <tag>latest</tag>
                   <tag>${git.branch}.${git.commit.id.abbrev}.${project.version}</tag>
                 </tags>
               </build>

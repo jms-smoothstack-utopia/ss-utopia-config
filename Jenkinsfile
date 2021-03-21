@@ -6,22 +6,6 @@ pipeline {
                 sh 'mvn clean package docker:build'
             }
         }
-        stage('Tag Development images') {
-            when {
-                branch 'dev'
-            }
-            steps {
-                sh 'mvn docker:tag "-Ddocker.image.tag=dev-latest"'
-            }
-        }
-        stage('Tag Main images') {
-            when {
-                branch 'main'
-            }
-            steps {
-                sh 'mvn docker:tag "-Ddocker.image.tag=latest"'
-            }
-        }
         stage('Push image to repository') {
             when {
                 anyOf {
